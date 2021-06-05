@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-6 form-group">
+    <label for="nomeInput">Nome</label>
+    <input type="text" class="form-control" id="nomeInput" #nomeInput>
+  </div>
+  <div class="col-md-6 form-group mb-2">
+    <label for="cidade">Cidade</label>
+    <input type="text" class="form-control" id="nomeInput" #cidadeInput>
+  </div>
+
+</div>
+
+
+  <div class="col-md-6 form-group mb-2">
+    <label for="Idade">Estado</label>
+    <input type="text" class="form-control" id="nomeInput" #estadoInput>
+  </div>
+
+<div class="row">
+  <button class="btn btn-primary btn-block" (click)="adicionar(nomeInput.value, cidadeInput.value, 
+  estadoInput.value)" type="button">Cadastrar
+  </button>
+</div>
